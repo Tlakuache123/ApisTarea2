@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
 
 const CreditCard = ({ data }) => {
@@ -15,13 +15,17 @@ const CreditCard = ({ data }) => {
 };
 
 const Cards = () => {
-  const [amount, setAmount] = useState(1);
+  const [amount, setAmount] = useState(3);
   const [creditCards, setCreditCards] = useState([]);
+
+  useEffect(() => {
+    refreshData();
+  }, []);
 
   const refreshData = () => {
     axios
       .get(
-        `https://fakerapi.it/api/v1/credit_cards?_quantity=${amount}?_locale=es_MX`
+        `https://fakerapi.it/api/v1/credit_cards?_quantity=${amount}&_locale=es_MX`
       )
       .then((result) => {
         const { data } = result;
