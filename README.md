@@ -1,8 +1,21 @@
-# React + Vite
+# Tarea Apis 2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+__Araujo Palestina Claudio Hassiel__
 
-Currently, two official plugins are available:
+Aqui se encuentra una aplicación usando React para demostrar el consumo de 3 apis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### How to install
+
+__Importante__: Debes tener instalado: _NodeJS_ 
+
+Primero descarga todas las dependencias
+
+```
+npm install
+```
+
+Corre el comando para iniciar la app localmente
+
+```
+npm run dev
+```
