@@ -44,7 +44,7 @@ const Users = () => {
   return (
     <div className="section">
       <p className="text text-xl text-center">Users</p>
-      <div className="border border-sky-600 p-2 rounded m-2 min-w-full min-h-1 grid grid-cols-3 gap-2">
+      <div className="border border-sky-600 p-2 rounded m-2 min-w-full min-h-1 grid grid-cols-4 gap-2">
         {creditCards.map((v, i) => (
           <UserCard data={v} gender={gender} key={i} />
         ))}
